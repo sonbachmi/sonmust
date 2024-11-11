@@ -1,7 +1,15 @@
-
 /* top header */
+
+.header-wrap {
+    margin-bottom: 10px;
+}
+
 .top-header {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15)
+
+}
+
+.header-title {
+    border-bottom: none;
 }
 
 .top-header-nav {
@@ -517,4 +525,8 @@
 .navbar-nav .dropdown-menu li a.active, .navbar-nav .dropdown-menu li a:hover, .navbar-nav .dropdown-menu > ul > .mega-menu-col ul > li:hover > a, .navbar-nav .dropdown-menu > ul > li:hover > a {
     background-color: transparent;
     color: #3949ab
+}
+
+.dropdown-mega-menu {
+    display: none !important;
 }
