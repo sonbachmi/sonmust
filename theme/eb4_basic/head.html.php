@@ -149,6 +149,18 @@ $is_megamenu = 'yes';
                     </ul>
                 </div>
 
+                <div class="header-search">
+                    <form name="fsearchbox" method="get" action="<?php echo G5_BBS_URL; ?>/search.php"
+                          onsubmit="return fsearchbox_submit(this);" class="eyoom-form">
+                        <input type="hidden" name="sfl" value="wr_subject||wr_content">
+                        <input type="hidden" name="sop" value="and">
+                        <label for="modal_sch_stx" class="sound_only"><strong>상품명 검색</strong></label>
+                        <input type="text" name="stx" id="modal_sch_stx" class="sch_stx" maxlength="20"
+                               placeholder="상품명 검색">
+                        <input type="submit">
+                    </form>
+                </div>
+
                 <div class="header-title-mobile-btn">
                     <button type="button" class="navbar-toggler search-toggle mobile-search-btn">
                         <span class="sr-only">검색 버튼</span>
@@ -301,8 +313,11 @@ $is_megamenu = 'yes';
                                                             <?php } ?>
                                                             <?php if (isset($menu_2['sub']) && $menu_2['sub'] == 'on') { ?>
                                                                 <span class="caret-right">
-                                                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M5.52859 4.02861C5.78894 3.76826 6.21105 3.76826 6.4714 4.02861L10.4714 8.02861C10.7317 8.28896 10.7317 8.71107 10.4714 8.97141L6.4714 12.9714C6.21105 13.2318 5.78894 13.2318 5.52859 12.9714C5.26824 12.7111 5.26824 12.289 5.52859 12.0286L9.05719 8.50001L5.52859 4.97141C5.26824 4.71107 5.26824 4.28896 5.52859 4.02861Z" fill="currentColor"/>
+                                                                    <svg width="16" height="17" viewBox="0 0 16 17"
+                                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd"
+      d="M5.52859 4.02861C5.78894 3.76826 6.21105 3.76826 6.4714 4.02861L10.4714 8.02861C10.7317 8.28896 10.7317 8.71107 10.4714 8.97141L6.4714 12.9714C6.21105 13.2318 5.78894 13.2318 5.52859 12.9714C5.26824 12.7111 5.26824 12.289 5.52859 12.0286L9.05719 8.50001L5.52859 4.97141C5.26824 4.71107 5.26824 4.28896 5.52859 4.02861Z"
+      fill="currentColor"/>
 </svg>
 
                                                                 </span>
