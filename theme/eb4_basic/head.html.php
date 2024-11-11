@@ -112,6 +112,8 @@ $is_megamenu = 'yes';
                 </a>
                 <?php /* ===== 사이트 로고 끝 ===== */ ?>
 
+                <div class="header-brand">P2U내역</div>
+
                 <div class="header-nav">
                     <ul class="top-header-nav list-unstyled thn-end">
                         <?php if ($is_member) { ?>
@@ -159,18 +161,6 @@ $is_megamenu = 'yes';
                                placeholder="상품명 검색">
                         <input type="submit">
                     </form>
-                </div>
-
-                <div class="header-title-mobile-btn">
-                    <button type="button" class="navbar-toggler search-toggle mobile-search-btn">
-                        <span class="sr-only">검색 버튼</span>
-                        <span class="fas fa-search"></span>
-                    </button>
-                    <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">
-                        <span class="sr-only">메뉴 버튼</span>
-                        <span class="fas fa-bars"></span>
-                    </button>
                 </div>
             </div>
         </div>

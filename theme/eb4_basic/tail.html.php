@@ -61,26 +61,26 @@ if (!defined('_EYOOM_')) exit;
                 </div>
             </div>
             <div class="footer-info">
-                <div class="footer-line">CS CENTER :
-                    <span><?php echo $bizinfo['bi_cs_tel1'] ?></span>
-                    <span class="info-divider">|</span>
+                <div class="footer-line cs has-break">
+                    <span>CS CENTER <?php echo $bizinfo['bi_cs_tel1'] ?></span>
+                    <br><span class="info-divider no-mobile">|</span>
                     <span>통신판매업 : <?php echo $bizinfo['bi_cs_time'] ?></span>
                 </div>
-                <div class="footer-line secondary">
+                <div class="footer-line secondary has-break">
                     <span><?php echo $bizinfo['bi_cs_email'] ?></span>
-                    <span class="info-divider">|</span>
+                    <br><span class="info-divider no-mobile">|</span>
                     <span><?php echo $bizinfo['bi_cs_closed'] ?></span>
                 </div>
-                <div class="footer-line">사업자 등록번호 :
+                <div class="footer-line small">사업자 등록번호 :
                     <span><?php echo $bizinfo['bi_company_name'] ?></span>
                     <span class="info-divider">|</span>
                     <span>대표 : <?php echo $bizinfo['bi_company_ceo'] ?></span>
                 </div>
-                <div class="footer-line secondary">사업자 등록번호 :
+                <div class="footer-line secondary normal-height"><span>사업자 등록번호 :
                     <span><?php echo $bizinfo['bi_company_bizno'] ?></span>
-                    <span class="info-divider">|</span>
+                    <br><span class="info-divider no-mobile">|</span>
                     <span>통신판매업 : <?php echo $bizinfo['bi_company_sellno'] ?></span>
-                    <span class="info-divider">|</span>
+                    <br><span class="info-divider no-mobile">|</span>
                     <span>주소 : <?php echo $bizinfo['bi_company_addr1']; ?></span>
                 </div>
             </div>

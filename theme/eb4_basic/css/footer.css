@@ -3,13 +3,14 @@
     position: relative;
     color: white;
     background: var(--bg-inverse);
-    padding: 24px 0 54px;
+    padding: 1.5em 1em;
     display: flex;
     justify-content: center;
+    font-size: .875em;
 }
 
 .footer .container {
-    max-width: min(70em, 100%)
+    /*max-width: min(70em, 100%)*/
 }
 
 .footer-top {
@@ -20,13 +21,13 @@
 .footer-nav {
     display: flex;
     margin-left: auto;
-    gap: 0 40px;
+    gap: 0 2.5em;
     justify-content: flex-end;
 }
 
 .footer-nav a {
     color: inherit;
-    font-size: .9375rem;
+    font-size: 1.286em;
 }
 
 .footer-nav a:hover {
@@ -34,38 +35,110 @@
 }
 
 .footer-info {
-    font-size: .9em;
-
 }
+
 .footer-line {
     display: flex;
     gap: 0 .5em;
     margin-bottom: .6em;
+    /*white-space: nowrap;*/
+
     &.secondary {
         color: var(--text-tertiary);
         margin-bottom: 1.3em;
     }
+
+    br {
+        display: none;
+    }
+
+    &.cs {
+
+    }
 }
+
 .info-divider {
     color: var(--text-tertiary)
 }
+
 .footer-copyright {
-    font-size: .9em;
     text-align: left;
     color: var(--text-tertiary);
     padding: 0;
 }
+
 .footer-legal-nav {
-    margin-top: 40px;
+    margin: 4em 0;
     display: flex;
-    gap: 0 24px;
+    gap: 0 1.25em;
 }
 
 .footer-legal-nav a {
     color: inherit;
-    font-size: .9em;
+    white-space: nowrap;
 }
 
 .footer-legal-nav a:hover {
     text-decoration: underline
+}
+
+@media (max-width: 1000px) {
+    .footer {
+        padding: 4em 1em 0;
+    }
+
+    .container {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        margin-bottom: 3em;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 2em;
+        margin-left: 0;
+        gap: 1.25em 0;
+    }
+
+    .footer-line {
+        br {
+            display: inline;
+        }
+
+        .info-divider.no-mobile {
+            display: none;
+        }
+
+
+        &.has-break {
+            margin-top: 1em;
+            flex-direction: column;
+            line-height: .8;
+        }
+
+        &.secondary, &.small {
+            font-size: .75em;
+        }
+
+        &.normal-height {
+            line-height: inherit;
+        }
+    }
+
+    .footer-copyright {
+        font-size: .75em;
+    }
+    .footer-legal-nav {
+        margin: 2em 0 3em;
+    }
+    .footer-legal-nav a {
+        font-size: .75em;
+    }
 }
