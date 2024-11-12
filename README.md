@@ -17,6 +17,8 @@ PHP markup and code changes made directly to original theme templates
 
 Styling done with vanilla CSS to new custom stylesheets that override and extend the original from theme.
 
+Using CSS variables for Figma library theme colors.
+
 ## Responsive Layout
 Follows Figma design. Since the design does not include the hamburger menu, I assume this is intentional (?)
 so I temporarily disable it from original code, while still keeping media queries.

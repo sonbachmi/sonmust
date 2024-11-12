@@ -498,7 +498,7 @@
 
 .navbar-nav .dropdown:hover .dropdown-submenu.root-level > .dropdown-item:hover {
     color: white !important;
-    background: var(--bg-secondary);
+    background: var(--bg-interactive-secondary);
     border-radius: 6px;
 }
 
